@@ -1,15 +1,12 @@
 ---
 title: '除了Symbol，还能这样实现多彩字体图标'
 date: 2018-07-09 15:27:25
-tags: []
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/colorIcon.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/colorIcon.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/colorIcon.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/colorIcon.jpg
-isTop: false
+tags: [经验技巧]
+description: 这是一种另辟蹊径的实现多彩图标方式。
 ---
+
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/colorIcon.jpg)
+
 ## 引
 　　我们都知道，iconfont字体图标，除非使用Symbol类型，且下载一个本身就带有多种颜色的图标才可以让他在页面中以彩色的形式显示出来，不然就只能使用color属性给字体图标一个颜色，所以也有很多开发者使用svg来让图标变的丰富，但是svg如果节点太多的话会造成性能问题，接下来就是本文的主角——background-clip: text
 ## 第一步

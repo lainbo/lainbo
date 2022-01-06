@@ -17,7 +17,7 @@ colors:
 
 # Favicon
 # ---------------
-favicon: /yun.svg
+favicon: /tree.svg
 
 # ---------------------------------------------------------------
 # Sidebar Settings
@@ -42,70 +42,17 @@ toc:
 
 # Social Links.
 social:
-  - name: RSS
-    # set rss in your root config
-    # https://github.com/hexojs/hexo-generator-feed
-    link: /atom.xml # config.feed.path
-    icon: icon-rss-line
-    color: orange
-  - name: QQ 群 1050458482
-    # https://isux.tencent.com/wp-content/uploads/2016/05/20160512101222609.pdf
-    link: https://qm.qq.com/cgi-bin/qm/qr?k=kZJzggTTCf4SpvEQ8lXWoi5ZjhAx0ILZ&jump_from=webapi
-    icon: icon-qq-line
-    color: "#12B7F5"
   - name: GitHub
-    link: https://github.com/YunYouJun
+    link: https://github.com/lainbo
     icon: icon-github-line
     color: "#6e5494"
-  - name: 微博
-    link: https://weibo.com/jizhideyunyoujun
-    icon: icon-weibo-line
-    color: "#E6162D"
-  - name: 豆瓣
-    link: https://www.douban.com/people/yunyoujun/
-    icon: icon-douban-line
-    color: "#007722"
-  - name: 网易云音乐
-    link: https://music.163.com/#/user/home?id=247102977
-    icon: icon-netease-cloud-music-line
-    color: "#C20C0C"
-  - name: 知乎
-    link: https://www.zhihu.com/people/yunyoujun/
-    icon: icon-zhihu-line
-    color: "#0084FF"
-  - name: 哔哩哔哩
-    link: https://space.bilibili.com/1579790
-    icon: icon-bilibili-line
-    color: "#FF8EB3"
-  # - name: POPI
-  #   link: https://www.popiapp.cn/elpsycn
-  #   icon: icon-questionnaire-line
-  #   color: "#525252"
-  - name: 微信公众号
-    link: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/about/white-qrcode-and-search.jpg
+  - name: 微信号：lainbo
     icon: icon-wechat-2-line
     color: "#1AAD19"
-  - name: Twitter
-    link: https://twitter.com/YunYouJun
-    icon: icon-twitter-line
-    color: "#1da1f2"
-  # - name: Telegram
-  #   link: https://t.me/YunYouJun
-  #   icon: icon-telegram-line
-  #   color: "#0088CC"
-  - name: Telegram Channel
-    link: https://t.me/elpsycn
-    # icon: icon-telegram-fill
-    icon: icon-telegram-line
-    color: "#0088CC"
   - name: E-Mail
-    link: mailto:me@yunyoujun.cn
+    link: mailto:lainbo@foxmail.com
     icon: icon-mail-line
     color: "#8E71C1"
-  - name: Travelling
-    link: https://travellings.link
-    icon: icon-train-line
-    color: black
 
 codeblock:
   copy_btn: true
@@ -115,10 +62,10 @@ codeblock:
 
 # Extra links
 pages:
-  - name: 我的小伙伴们
-    url: /links/
-    icon: icon-genderless-line
-    color: dodgerblue
+  # - name: 我的小伙伴们
+  #   url: /links/
+  #   icon: icon-genderless-line
+  #   color: dodgerblue
 
 # pages
 # -------
@@ -136,7 +83,7 @@ girls:
 # Sidebar Avatar
 avatar:
   enable: true
-  url: /yun.png
+  url: https://gitee.com/Lainbo/image-beds/raw/master/img/avatar.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -145,7 +92,7 @@ avatar:
   status:
     enable: false
     emoji: 😊
-    message: 永远相信美好的事情即将发生
+    message: 温故而知新
 
 # main menu navigation
 menu:
@@ -172,7 +119,7 @@ archive:
   last_word: 没有更多的黑历史了_(:з」∠)_
 
 wordcloud:
-  enable: false
+  enable: true
   height: 350
 
 # You can set color for every tag or category.
@@ -299,7 +246,7 @@ vendors:
 # UI
 banner:
   enable: true
-  title: 云游君的小站
+  title: JC的小站
   src: /js/ui/banner.js
   border: true
   cloud:
@@ -419,7 +366,7 @@ post_edit:
 # Footer Settings
 # ---------------
 footer:
-  since: 2019
+  since: 2018
 
   # Icon between year and copyright info.
   icon:
@@ -487,8 +434,8 @@ say:
   # https://developer.hitokoto.cn/sentence/
   hitokoto:
     enable: true
-    api: https://v1.hitokoto.cn
-    # api: https://v1.hitokoto.cn?c=a&c=b&c=c&c=d&c=k
+    # api: https://v1.hitokoto.cn
+    api: https://v1.hitokoto.cn?c=d&c=h&c=i&c=k
 
 # you can new JSON file in your blog root folder
 # example: source/data/sentences.json

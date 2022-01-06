@@ -1,15 +1,12 @@
 ---
 title: '几种数组去重的方式'
 date: 2018-06-27 20:47:00
-tags: []
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/...set.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/...set.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/...set.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/...set.jpg
-isTop: false
+tags: [经验技巧]
+description: 数组去重有着很大的优化空间，在这里做一下整理。
 ---
+
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/set.jpg)
+
 ## 1) 双重for循环数组去重
 + 双重for循环可以说是一个比较笨重的方法来数组去重，时间复杂度是O(n²)，如果数组很长，他的性能将会很差
 + 原理：先定义一个包含原始数组第一个元素的数组，然后遍历原始数组，将原始数组中的每个元素与新数组中的每个元素进行比对，如果不重复则添加到新数组中，最后返回新数组

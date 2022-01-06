@@ -2,14 +2,15 @@
 title: '数组相关的杂七杂八'
 date: 2019-04-03 10:05:41
 tags: [学习记录]
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/new%20Array.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/new%20Array.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/new%20Array.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/new%20Array.jpg
+description: 这是和数组相关的一些知识整理。
 ---
+
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/newArray.jpg)
 
 ## 数组的构造器
 　　数组的构造器其实要比一般写的更简单点，除了字面量的声明方法，其实可以使用Array()，你可能会说：我觉的字面量的方法也很方便呀，那么来看看下面的代码
+
+
 ``` JavaScript
 var a = Array(8); // [undefined × 8]
 // 使用对象字面量
