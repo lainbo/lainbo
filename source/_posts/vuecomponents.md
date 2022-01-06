@@ -1,17 +1,12 @@
 ---
 title: 'Vue2的12种和Vue3的7种组件通信'
 date: 2019-11-28 21:04:20
-tags: [学习记录,经验技巧]
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/VueComponents.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/VueComponents.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/VueComponents.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/VueComponents.jpg
-isTop: false
+tags: [经验技巧]
+description: Vue2、3有非常多的传值方式，他们适合的场景各不相同，我进行了全面的总结。
 ---
 
-<!-- more -->
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/VueComponents.jpg)
+
 # Vue 2
 ## 1. props
 ### 就是父传子的属性; props 值可以是一个数组或对象;

@@ -1,15 +1,12 @@
 ---
 title: 'Git命令集'
 date: 2019-02-05 10:12:14
-tags: [学习记录,经验技巧]
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/Git-order.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/Git-order.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/Git-order.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/Git-order.jpg
-isTop: false
+tags: [学习记录]
+description: Git的各种命令。
 ---
+
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/Git-order.jpg)
+
 ## Git 常用命令
 ***
 + 初始化一个Git(本地)仓库 (只需初始一次)
@@ -242,3 +239,6 @@ ssh -T git@gitee.com
 + git init
 + git remote add origin xxx(注意这里是对应的SSH地址，不是HTTPS的地址)
 + git fetch ...
+
+## 使用工具(2021-06-07)更新  
+使用github desktop软件，上述的大部分操作都不需要人工完成，也能更快更好的使用git

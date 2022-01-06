@@ -1,15 +1,12 @@
 ---
 title: 'Echarts的常用配置注释'
 date: 2020-10-18 12:55:02
-tags: []
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/echarts.png
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/echarts.png
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/echarts.png
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/echarts.png
-isTop: false
+tags: [文档类]
+description: Echarts文档内容太多？常见属性都在这里。
 ---
+
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/echarts.png)
+
 ### 这里是一些Echarts的常用属性，在这里查阅加深记忆
 
 ``` JavaScript

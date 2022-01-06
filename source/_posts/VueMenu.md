@@ -1,17 +1,13 @@
 ---
-title: '零依赖的Vue原生右键菜单'
+title: '在Vue中实现右键菜单'
 date: 2019-03-25 20:46:53
 tags: []
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueMenu.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueMenu.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueMenu.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueMenu.jpg
-isTop: false
+description: Vue中实现右键菜单的方式。
 ---
 
-### **使用vue-contextmenu.js，可以做到Vue原生实现右键菜单组件，零依赖**
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/vueMenu.jpg)
+
+### **使用vue-contextmenu.js，可以做到Vue实现右键菜单组件**
 
 ## 首先需要npm
 ``` JavaScript

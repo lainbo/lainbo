@@ -2,14 +2,10 @@
 title: 'Vue起项目，我做了这些事'
 date: 2021-08-28 10:11:15
 tags: [经验技巧]
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueProjectConfig.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueProjectConfig.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueProjectConfig.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/vueProjectConfig.jpg
-isTop: false
+description: Vue2起项目的时候往往要做很多基建工作，在这里我详细的将其列出。
 ---
+
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/vueProjectConfig.jpg)
 
 ## 技术栈
 + 就像标题上所说的，当然是vue了

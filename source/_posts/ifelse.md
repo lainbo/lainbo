@@ -2,14 +2,10 @@
 title: 'JavaScript复杂判断的优雅写法'
 date: 2019-07-10 17:26:47
 tags: [经验技巧]
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/ifelse.jpg
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/ifelse.jpg
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/ifelse.jpg
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/ifelse.jpg
-isTop: false
+description: JavaScript中需要判断很多情况的时候，我们往往会使用很多if else，那么如何优雅的写大量的判断呢？
 ---
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/ifelse.jpg)
+
 我们在编写JavaScript代码的时候经常遇见要写复杂的判断情况，通常是用多个if/else或者switch来实现多个条件判断，但是随着代码量的增加，代码块会越来越臃肿，到最后变的难以维护，现在我们来写一下如何优雅的实现复杂判断
 首先先看一个例子，这是最原始的if/else
 ### if/else写法

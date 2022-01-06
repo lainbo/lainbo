@@ -1,15 +1,11 @@
 ---
 title: '常用两栏布局、三栏布局写法汇总'
 date: 2018-03-13 00:34:23
-tags: []
-published: true
-hideInList: false
-banner_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/layout.png
-index_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/layout.png
-top_img: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/layout.png
-cover: https://lainbo.oss-cn-beijing.aliyuncs.com/Blog/layout.png
-isTop: false
+tags: [学习记录]
 ---
+
+![](https://gitee.com/Lainbo/image-beds/raw/master/img/layout.png)
+
 ## 两栏布局（左侧固定，右侧自适应）
 ```html
 <body>
