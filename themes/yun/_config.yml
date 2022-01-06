@@ -246,7 +246,11 @@ vendors:
 # UI
 banner:
   enable: true
-  title: Jc的小站
+  title: 
+    - Jc
+    - 的
+    - 小
+    - 站
   src: /js/ui/banner.js
   border: true
   cloud:
@@ -273,7 +277,7 @@ font:
 
 # custom your color in fireworks
 fireworks:
-  enable: true
+  enable: false
   src: /js/ui/fireworks.js
   colors:
     - "102, 167, 221"
