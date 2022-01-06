@@ -246,7 +246,7 @@ vendors:
 # UI
 banner:
   enable: true
-  title: JC的小站
+  title: Jc的小站
   src: /js/ui/banner.js
   border: true
   cloud:
