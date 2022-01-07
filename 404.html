@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404</title>
+  <style>
+    @property --swing-x {
+      initial-value: 0;
+      inherits: false;
+      syntax: "<integer>";
+    }
+
+    @property --swing-y {
+      initial-value: 0;
+      inherits: false;
+      syntax: "<integer>";
+    }
+
+    .err_wrapper {
+      min-height: 100vh;
+      min-width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #737373;
+      color: #fafafa;
+      perspective: 1200px;
+
+    }
+
+
+
+    .err_text {
+      margin: 0;
+      margin-bottom: 16px;
+      font-weight: 500;
+      color: transparent;
+      transform-style: preserve-3d;
+      -webkit-animation: swing 2s infinite alternate ease-in-out;
+      animation: swing 2s infinite alternate ease-in-out;
+      font-size: clamp(5rem, 40vmin, 20rem);
+      letter-spacing: 1rem;
+      transform: translate3d(0, 0, 0vmin);
+      --x: calc(50% + (var(--swing-x) * 0.5) * 1%);
+      background: radial-gradient(#e6e6e6, #7a7a7a 45%) var(--x) 100%/200% 200%;
+      -webkit-background-clip: text;
+    }
+
+    .err_text:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #000;
+      -webkit-animation: swing 2s infinite alternate ease-in-out;
+      animation: swing 2s infinite alternate ease-in-out;
+      content: "404";
+      filter: blur(1.5vmin);
+      transform: scale(1.05) translate3d(0, 12%, -10vmin) translate(calc((var(--swing-x, 0) * 0.05) * 1%),
+          calc((var(--swing-y) * 0.05) * 1%));
+    }
+
+    .cloak {
+      height: 100%;
+      width: 100%;
+      animation: swing 2s infinite alternate-reverse ease-in-out;
+      transform-origin: 50% 30%;
+      transform: rotate(calc(var(--swing-x) * -0.25deg));
+      background: radial-gradient(40% 40% at 50% 42%, transparent, #000 35%);
+      overflow: hidden;
+    }
+
+    .cloak__container {
+      height: 250vmax;
+      width: 250vmax;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+
+    .info {
+      text-align: center;
+      line-height: 1.5;
+      transform-style: preserve-3d;
+      max-width: clamp(16rem, 90vmin, 25rem);
+    }
+
+    @-webkit-keyframes swing {
+      0% {
+        --swing-x: -100;
+        --swing-y: -100;
+      }
+
+      50% {
+        --swing-y: 0;
+      }
+
+      100% {
+        --swing-y: -100;
+        --swing-x: 100;
+      }
+    }
+
+    @keyframes swing {
+      0% {
+        --swing-x: -100;
+        --swing-y: -100;
+      }
+
+      50% {
+        --swing-y: 0;
+      }
+
+      100% {
+        --swing-y: -100;
+        --swing-x: 100;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="err_wrapper">
+    <h1 class="err_text">404</h1>
+    <div class="fixed inset-0 overflow-hidden">
+      <div class="cloak__container">
+        <div class="cloak"></div>
+      </div>
+    </div>
+    <div class="info">
+      <h2 class="text-white text-24px mb-24px">找不到这个页面了</h2>
+      <p class="mb-40px">您可能输入了错误的地址，或没有该页面权限</p>
+      <el-button @click="goHome">返回首页</el-button>
+    </div>
+  </div>
+</body>
+
+</html>
