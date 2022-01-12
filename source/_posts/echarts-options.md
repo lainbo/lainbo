@@ -9,7 +9,7 @@ description: Echarts文档内容太多？常见属性都在这里。
 
 ### 这里是一些Echarts的常用属性，在这里查阅加深记忆
 
-``` JavaScript
+``` js
 function echartsOptions () {
   var option = {
     // 全图默认背景

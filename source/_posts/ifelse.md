@@ -9,7 +9,7 @@ description: JavaScript中需要判断很多情况的时候，我们往往会使
 我们在编写JavaScript代码的时候经常遇见要写复杂的判断情况，通常是用多个if/else或者switch来实现多个条件判断，但是随着代码量的增加，代码块会越来越臃肿，到最后变的难以维护，现在我们来写一下如何优雅的实现复杂判断
 首先先看一个例子，这是最原始的if/else
 ### if/else写法
-``` JavaScript
+``` js
 /**
  * 按钮点击事件
  * @param {number} status 活动状态：1 开团进行中 2 开团失败 3 商品售罄 4 开团成功 5 系统取消
@@ -38,7 +38,7 @@ const onButtonClick = (status)=>{
 ```
 通过代码可以看到这个按钮的点击逻辑：根据不同活动状态做两件事情，发送日志埋点和跳转到对应页面，大家可以很轻易的提出这段代码的改写方案，switch出场：
 ### switch写法
-``` JavaScript
+``` js
 /**
  * 按钮点击事件
  * @param {number} status 活动状态：1 开团进行中 2 开团失败 3 商品售罄 4 开团成功 5 系统取消
@@ -73,7 +73,7 @@ const onButtonClick = (status)=>{
 
 虽然清晰多了，但是还是有更简单的写法
 ### 存到Object里
-``` JavaScript
+``` js
 const actions = {
   '1': ['processing','IndexPage'],
   '2': ['fail','FailPage'],
@@ -98,7 +98,7 @@ const onButtonClick = (status)=>{
 
 这就有了另一种写法
 ### 存到Map里
-``` JavaScript
+``` js
 const actions = new Map([
   [1, ['processing','IndexPage']],
   [2, ['fail','FailPage']],
@@ -123,7 +123,7 @@ const onButtonClick = (status)=>{
 + 你可以通过size属性很容易地得到一个Map的键值对个数，而对象的键值对个数只能手动确认。
 ***
 ** 现在把问题升级一下，我们需要在点击按钮的时候不仅要判断status，还需要判断用户身份
-``` JavaScript
+``` js
 /**
  * 按钮点击事件
  * @param {number} status 活动状态：1开团进行中 2开团失败 3 开团成功 4 商品售罄 5 有库存未开团
@@ -164,7 +164,7 @@ const onButtonClick = (status,identity)=>{
 这里已经不能写里面的逻辑代码了，太冗长了
 从上面的例子我们可以看出，当逻辑升级为二元判断的时候，代码量和判断量都将加倍，那这时候应该怎么做呢？
 ### 将条件拼接成字符串存到Object里
-``` JavaScript
+``` js
 const actions = new Map([
   ['guest_1', ()=>{/*do sth*/}],
   ['guest_2', ()=>{/*do sth*/}],
@@ -193,7 +193,7 @@ const onButtonClick = (identity,status)=>{
 <br />
 当然上面的代码也是可以使用Object来实现的
 
-``` JavaScript
+``` js
 const actions = {
   'guest_1':()=>{/*do sth*/},
   'guest_2':()=>{/*do sth*/},
@@ -209,7 +209,7 @@ const onButtonClick = (identity,status)=>{
 当然有人还是认为把查询条件拼成字符串有点别扭，那其实还有一种方案，就是使用Map对象，以Object作为key
 
 ### 将条件存为Object存到Map里
-``` JavaScript
+``` js
 const actions = new Map([
   [{identity:'guest',status:1},()=>{/*do sth*/}],
   [{identity:'guest',status:2},()=>{/*do sth*/}],
@@ -224,7 +224,7 @@ const onButtonClick = (identity,status)=>{
 这里也看出来Map与Object的区别，Map可以用任何类型的数据作为key。
 ***
 现在再把难度升级一下：假如guest情况下，status1-4的处理逻辑都一样怎么办，最差的情况是这样：
-``` JavaScript
+``` js
 const actions = new Map([
   [{identity:'guest',status:1},()=>{/* functionA */}],
   [{identity:'guest',status:2},()=>{/* functionA */}],
@@ -236,7 +236,7 @@ const actions = new Map([
 ```
 &nbsp;
 好一点的写法是将处理逻辑函数进行缓存：
-``` JavaScript
+``` js
 const actions = ()=>{
   const functionA = ()=>{/*do sth*/}
   const functionB = ()=>{/*do sth*/}
@@ -258,7 +258,7 @@ const onButtonClick = (identity,status)=>{
 &nbsp;
 这样写已经能满足日常需求了，但认真一点讲，上面重写了4次functionA还是有点不爽，假如判断条件变得特别复杂，比如identity有3种状态，status有10种状态，那你需要定义30条处理逻辑，而往往这些逻辑里面很多都是相同的，这似乎也不可接受的，那可以这样实现:
 ### 将条件写作正则存到Map里
-``` JavaScript
+``` js
 const actions = ()=>{
   const functionA = ()=>{/*do sth*/}
   const functionB = ()=>{/*do sth*/}
@@ -277,7 +277,7 @@ const onButtonClick = (identity,status)=>{
 &nbsp;
 这里Map的优势更加凸显，可以用正则类型作为key了，这样就有了无限可能，假如需求变成，凡是guest情况都要发送一个日志埋点，不同status情况也需要单独的逻辑处理，那我们可以这样写:
 
-``` JavaScript
+``` js
 const actions = ()=>{
   const functionA = ()=>{/*do sth*/}
   const functionB = ()=>{/*do sth*/}
@@ -311,7 +311,7 @@ const onButtonClick = (identity,status)=>{
 
 ### 补充
 在平时如果只有普通的一元判断时，也可以将条件和处理函数放在数组中
-``` JavaScript
+``` js
 const Arr = [
     {
         condition: () => a > b,

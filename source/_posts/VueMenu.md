@@ -10,7 +10,7 @@ description: Vue中实现右键菜单的方式。
 ### **使用vue-contextmenu.js，可以做到Vue实现右键菜单组件**
 
 ## 首先需要npm
-``` JavaScript
+``` js
 npm i vue-contextmenujs
 ```
 当然也可以从公共库进行引入，但是目前只发现UNPKG有该文件
@@ -18,7 +18,7 @@ npm i vue-contextmenujs
 <script src="https://unpkg.com/vue-contextmenujs/dist/contextmenu.umd.js">
 ```
 ## 引入
-``` JavaScript
+``` js
 import Contextmenu from "vue-contextmenujs"
 Vue.use(Contextmenu)
 ```

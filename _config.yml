@@ -46,7 +46,6 @@ future: true
 # 关闭 highlight
 highlight:
   enable: false
-# 启用 prism
 prismjs:
   enable: true
   preprocess: true
