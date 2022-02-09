@@ -2,7 +2,7 @@
 title: '收集有特色的库'
 date: 2022-02-09 10:19:02
 tags: [学习记录]
-description: 日常看见一些有特色的库会收集下来
+description: 日常看见一些有特色的库会收集下来，持续收集中
 ---
 
 ![](https://gitee.com/Lainbo/image-beds/raw/master/img/collection.webp)
@@ -15,3 +15,5 @@ description: 日常看见一些有特色的库会收集下来
 
 ### 工程类
 + [MicroApp](https://zeroing.jd.com/micro-app/) 微前端 —— [GitHub](https://github.com/micro-zoe/micro-app)
+
+**持续收集中……**
