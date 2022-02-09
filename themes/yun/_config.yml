@@ -277,7 +277,7 @@ font:
 
 # custom your color in fireworks
 fireworks:
-  enable: false
+  enable: true
   src: /js/ui/fireworks.js
   colors:
     - "102, 167, 221"
@@ -311,18 +311,19 @@ scrollreveal:
     - .post-card
     - .post-content img
 
+# 主页背景图片
 bg_image:
   enable: true
   url: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/stars-timing-0-blur-30px.jpg # recomend image related to your mode
   dark: https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/bg/galaxy.jpg
-  # blur: 30px
+  blur: 30px
   opacity: 1
 
 # Reward (Donate)
 # If enable true, reward would be displayed in every posts and pages by default.
 # You can show or hide reward in a specific page throuth `reward: true | false` in Front Matter.
 reward:
-  enable: true
+  enable: false
   icon: icon-hand-coin-line
   comment: I'm so cute. Please give me money.
   # url: https://github.com/YunYouJun/yunyoujun.github.io/issues/96
@@ -385,7 +386,7 @@ footer:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
 
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # https://beian.miit.gov.cn/
@@ -394,10 +395,10 @@ footer:
     # icp: 苏ICP备xxxxxxxx号
 
   live_time:
-    enable: false
+    enable: true
     prefix: 本博客已萌萌哒地运行
     suffix: (●'◡'●)
-    start_time: "2019-04-12T00:00:00"
+    start_time: "2018-03-13T00:00:00"
 
   # Display support
   # support:
@@ -414,7 +415,7 @@ footer:
 post_meta:
   item_text: false
   created_at: true
-  updated_at: true
+  updated_at: false
   categories: true
   tags: true
 
