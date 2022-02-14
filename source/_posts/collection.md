@@ -17,6 +17,6 @@ description: 日常看见一些有特色的库会收集下来，持续收集中
 + [MicroApp](https://zeroing.jd.com/micro-app/) 微前端 —— [GitHub](https://github.com/micro-zoe/micro-app)
 
 ### 工具类
-FileSaver.js 下载库 —— [GitHub](https://github.com/eligrey/FileSaver.js)
+[FileSaver.js](https://blog.csdn.net/qq_30671099/article/details/104052782) 下载库 —— [GitHub](https://github.com/eligrey/FileSaver.js)
 
 **持续收集中……**
