@@ -9,6 +9,7 @@ description: 日常看见一些有特色的库会收集下来，持续收集中
 
 ### 交互类
 + [vue拖拽](https://jbaysolutions.github.io/vue-grid-layout/) —— [GitHub](https://github.com/jbaysolutions/vue-grid-layout)
++ [vue2多行展开折叠](https://boyuai.github.io/vue-clamp/demo/?lang=zh) —— [GitHub](https://github.com/Justineo/vue-clamp)
 
 ### UI类
 + [Vuesax](https://vuesax.com/) 组件库 —— [GitHub](https://github.com/lusaxweb/vuesax-next)
