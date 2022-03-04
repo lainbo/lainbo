@@ -24,6 +24,7 @@ description: Vue2起项目的时候往往要做很多基建工作，在这里我
 + global.scss: 全局样式
 + coverComponents.scss: 用于全局覆盖组件库的样式
 + 其中 variable.scss 和 mixins.scss 会优先于 global.css 加载，并且可以不通过 import 的方式在项目中任何位置使用这些变量和 mixins。
+**注意：sass-loader>9.0.0时，不再拥有prependData这个属性，需要使用下面第2种写法**
 ``` js
 // vue.config.js
 module.exports = {
@@ -49,6 +50,17 @@ module.exports = {
       }
     }
   },
+}
+```
+```js
+loaderOptions: {
+  // sass混入和变量引入
+  sass: {
+    additionalData: `
+      @import "./src/styles/mixin.scss";
+      @import "./src/styles/variable.scss";
+    `
+  }
 }
 ```
 
