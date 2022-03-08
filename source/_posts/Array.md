@@ -85,8 +85,8 @@ Array.isArray({0: 'a', length: 1}); // false
 + 实际上，push方法是根据length属性来决定从哪里开始插入给定的值。
 ``` js
 let arr = [1,2,3,4,5];
-	console.log(arr.push(5));   // 6
-  console.log(arr); // [1,2,3,4,5,5]
+console.log(arr.push(5));   // 6
+console.log(arr); // [1,2,3,4,5,5]
   ```
 + 利用push根据length属性插入元素这个特点，可以实现数组的合并，如下：
 ``` js
@@ -105,8 +105,8 @@ console.log(i); // 4
 + 原数组发生改变
 ``` js
 let arr = [1,2,3,4,5];
-	console.log(arr.pop());// 5
-  console.log(arr);  //[1,2,3,4]
+console.log(arr.pop());// 5
+console.log(arr);  //[1,2,3,4]
   ```
 
 ### 3) Array.unshift()（开始位置添加一项）
@@ -116,8 +116,8 @@ let arr = [1,2,3,4,5];
 + 原数组发生改变
 ``` js
 let arr = [1,2,3,4,5]
-	console.log(arr.unshift(2))    // 6
-  console.log(arr)  //[2,1,2,3,4,5]
+console.log(arr.unshift(2))    // 6
+console.log(arr)  //[2,1,2,3,4,5]
   ```
 ### 4) Array.shift()（开始位置删除一项）
 + 作用：删除数组的第一项
@@ -126,8 +126,8 @@ let arr = [1,2,3,4,5]
 + 原数组发生改变
 ``` js
 let arr = [1,2,3,4,5]
-	console.log(arr.shift())  // 1
-  console.log(arr)   // [2,3,4,5]
+console.log(arr.shift())  // 1
+console.log(arr)   // [2,3,4,5]
   ```
 
 ### 5） Array.splice()（删除、添加、修改元素）
@@ -149,10 +149,10 @@ let arr = [1,2,3,4,5]
 + 原数组不发生变化
 ``` js
 let arr = [1,2,3,4,5,2]
-	let arr1 = arr.indexOf(2)
-	console.log(arr1)  // 1
-	let arr2 = arr.indexOf(9)
-	console.log(arr2)  // -1
+let arr1 = arr.indexOf(2)
+console.log(arr1)  // 1
+let arr2 = arr.indexOf(9)
+console.log(arr2)  // -1
 ```
 
 ### 7） Array.lastIndexOf()（从左到右查询）不兼容IE低版本浏览器：IE6,7,8
@@ -165,10 +165,10 @@ let arr = [1,2,3,4,5,2]
 + 原数组不发生变化
 ``` js
 let arr = [1,2,3,4,5,2]
-	let arr1 = arr.lastIndexOf(2)
-	console.log(arr1)  // 5
-	let arr2 = arr.lastIndexOf(9)
-	console.log(arr2)  // -1
+let arr1 = arr.lastIndexOf(2)
+console.log(arr1)  // 5
+let arr2 = arr.lastIndexOf(9)
+console.log(arr2)  // -1
 ```
 
 ### 8） Array.slice()（截取）
@@ -188,8 +188,8 @@ console.log([1,2,3].slice(-1));//[3]
 + 用法
 ``` js
 let arr = [1,2,3,4,5]
-	console.log(arr.slice(1,3))   // [2,3]
-  console.log(arr)    //  [1,2,3,4,5]
+console.log(arr.slice(1,3))   // [2,3]
+console.log(arr)    //  [1,2,3,4,5]
   ```
 
 ### 9) Array.sort()（排序）
@@ -205,9 +205,9 @@ let arr = [1,2,3,4,5]
 ``` js
  var ary=[1,3,10,50,2,120,30];
  ary.sort(function fn(a,b){
-           return a-b;//这里是一个回调函数，把函数当作实参传给sort的方法
-       })
-       console.log(ary); //这里是升序，如果b-a则为降序
+     return a-b;//这里是一个回调函数，把函数当作实参传给sort的方法
+ })
+ console.log(ary); //这里是升序，如果b-a则为降序
 ```
 
 ### 10) Array.reverse()（倒序）
@@ -217,8 +217,8 @@ let arr = [1,2,3,4,5]
 + 原数组发生变化
 ``` js
 let arr = [1,2,3,4,5]
-	console.log(arr.reverse())    // [5,4,3,2,1]
-  console.log(arr)    // [5,4,3,2,1]
+console.log(arr.reverse())    // [5,4,3,2,1]
+console.log(arr)    // [5,4,3,2,1]
   ```
 
 ### 11) Array.concat()（拼接数组）
@@ -230,8 +230,8 @@ let arr = [1,2,3,4,5]
 + 原数组不发生变化
 ``` js
 let arr = [1,2,3,4,5]
-	console.log(arr.concat([1,2]))  // [1,2,3,4,5,1,2]
-  console.log(arr)   // [1,2,3,4,5]
+console.log(arr.concat([1,2]))  // [1,2,3,4,5,1,2]
+console.log(arr)   // [1,2,3,4,5]
   ```
 ### 12) Array.join()（数组拼接成字符串）
 + 作用：将数组的成员项通过制定字符拼接成字符串 参数：
@@ -241,8 +241,8 @@ let arr = [1,2,3,4,5]
 + 原数组不发生变化
 ``` js
 var arr = [1,2]
-	var result = arr.join();
-  console.log(result);//'1,2'
+var result = arr.join();
+console.log(result);//'1,2'
   ```
 
 
@@ -257,13 +257,13 @@ var arr = [1,2]
 + 第一种
 ``` js
 let arr = [12,3,[1,2,3],6,78];
-    let ary=arr.flat()
-    console.log(ary);//[12,3,[1,2,3],6,78]
-    console.log(arr)// [12, 3, 1, 2, 3, 6, 78]
+let ary=arr.flat()
+console.log(ary);//[12,3,[1,2,3],6,78]
+console.log(arr)// [12, 3, 1, 2, 3, 6, 78]
 ```
 + 第二种
 ``` js
-    var arr = [ [1, 2, 2], [3, 4, 5, 5], [6, 7, 8, 9, [11, 12, [12, 13, [14] ] ] ], 10];
+var arr = [ [1, 2, 2], [3, 4, 5, 5], [6, 7, 8, 9, [11, 12, [12, 13, [14] ] ] ], 10];
 consolelog(arr.flat(Infinity))//[1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 11, 12, 12, 13, 14, 10]
 ```
 ***
@@ -281,11 +281,11 @@ consolelog(arr.flat(Infinity))//[1, 2, 2, 3, 4, 5, 5, 6, 7, 8, 9, 11, 12, 12, 13
   + arr就是原数组
 ``` js
 let ary = [1,2,3,4,5]
-	ary.map( (item,index,arr)=>{
-	        item= item* 2
-	        console.log(`item:${item}    index:${index}     arr:${arr}`)
-	})   
-	console.log(ary)
+ary.map((item,index,arr)=>{
+   item= item* 2
+   console.log(`item:${item}    index:${index}     arr:${arr}`)
+})   
+console.log(ary)
 ```
 
 ### 2） Array.forEach()（遍历数组）
@@ -298,30 +298,30 @@ let ary = [1,2,3,4,5]
   + item是遍历数组的每一项
   + index是遍历数组的索引
   + arr就是原数组
-``` js
-	let ary = [1,2,3,4,5]
-	ary.forEach( (item,index,arr)=>{
-        console.log(`item:${item}    index:${index}     arr:${arr}`)
-    })   
-    //  item:1    index:0     arr:1,2,3,4,5
-    //  item:2    index:1     arr:1,2,3,4,5
-    //  item:3    index:2     arr:1,2,3,4,5
-    //  item:4    index:3     arr:1,2,3,4,5
-    //  item:5    index:4     arr:1,2,3,4,5
+  ``` js
+  let ary = [1,2,3,4,5]
+  ary.forEach( (item,index,arr)=>{
+    console.log(`item:${item}    index:${index}     arr:${arr}`)
+  })   
+  //  item:1    index:0     arr:1,2,3,4,5
+  //  item:2    index:1     arr:1,2,3,4,5
+  //  item:3    index:2     arr:1,2,3,4,5
+  //  item:4    index:3     arr:1,2,3,4,5
+  //  item:5    index:4     arr:1,2,3,4,5
 
-	let ary = [1,2,3,4,5]
-	ary.forEach( (item,index,arr)=>{
-       item= item* 2
-       console.log(`item:${item}    index:${index}     arr:${arr}`)
-    })   
-    console.log(ary)
-    // item:2    index:0     arr:1,2,3,4,5
-    // item:4    index:1     arr:1,2,3,4,5
-    // item:6    index:2     arr:1,2,3,4,5
-    // item:8    index:3     arr:1,2,3,4,5
-    // item:10   index:4     arr:1,2,3,4,5
-    // [1, 2, 3, 4, 5]
-```
+  let ary = [1,2,3,4,5]
+  ary.forEach( (item,index,arr)=>{
+   item= item* 2
+   console.log(`item:${item}    index:${index}     arr:${arr}`)
+  })   
+  console.log(ary)
+  // item:2    index:0     arr:1,2,3,4,5
+  // item:4    index:1     arr:1,2,3,4,5
+  // item:6    index:2     arr:1,2,3,4,5
+  // item:8    index:3     arr:1,2,3,4,5
+  // item:10   index:4     arr:1,2,3,4,5
+  // [1, 2, 3, 4, 5]
+  ```
 >ary.forEach()和ary.map()的区别
 1、 ary.forEach()是和for循环一样，是代替for。ary.map()是修改数组其中的数据，并返回新的数据。
 2、ary.forEach() 没有return  ary.map() 有return。
@@ -332,14 +332,13 @@ let ary = [1,2,3,4,5]
 + find会根据回调函数的返回值，判断是否要继续向右查找；
 ``` js
 let arr = [12,3,45,6,78];
-	let  a =  arr.find((item,index)=>{
-        console.log(100);//输出三次
-        return item>20;
-    })
-    console.log(a);//45
+let a = arr.find((item,index)=>{
+  console.log(100);//输出三次
+  return item>20;
+})
+console.log(a);//45
 ```
 >find() 方法基于ECMAScript 2015（ES6）规范，返回数组中第一个满足条件的元素（如果有的话）， 如果没有，则返回undefined。
-
 >findIndex() 方法也基于ECMAScript 2015（ES6）规范，它返回数组中第一个满足条件的元素的索引（如果有的话）否则返回-1。
 
 
@@ -347,22 +346,22 @@ let arr = [12,3,45,6,78];
 + 过滤;原数组不发生改变；返回一个过滤后的新数组
 ``` js
 let arr = [12,3,45,6,78];
-	let ary = arr.filter((item,index)=>{
-        // 根据当前函数的返回值是true来获取这一项；如果是false，返回值中就没有这一项；
-        return item>30;
-    });
-    console.log(arr);//[12, 3, 45, 6, 78]
-    console.log(ary);//[45, 78]
+let ary = arr.filter((item,index)=>{
+  // 根据当前函数的返回值是true来获取这一项；如果是false，返回值中就没有这一项；
+  return item>30;
+});
+console.log(arr);//[12, 3, 45, 6, 78]
+console.log(ary);//[45, 78]
 ```
 
 ### 5) Array.every(测试所有元素)
 + 每一个都是true则返回true，如果有一个是false，那么直接返回false；只要找到false，直接结束，不再继续向下查找；返回值是布尔值
 ``` js
 let arr = [12,3,45,6,78];
-		let e = arr.every((item,index)=>{
-        	return item>13;
-	    })
-      console.log(e);//false
+let e = arr.every((item,index)=>{
+	return item>13;
+})
+console.log(e);//false
  ```
 
 ### 6) Array.includes()(包含)
@@ -374,7 +373,7 @@ let arr = [12,3,45,6,78];
 + 原数组不会发生变化
 ``` js
 let  arr = [12,3,45,6,78];
-  console.log(arr.includes(45));//true
+console.log(arr.includes(45));//true
   ```
 
 ### 7） Array.reduce(累加器)
@@ -382,31 +381,31 @@ let  arr = [12,3,45,6,78];
 + 参数：接受两个参数：一个是对数组每个元素执行的回调方法，一个是初始值
 ``` js
 let arr = [12,3,45,6,78];
-	let  a = arr.reduce((prev,next)=>{
-        // prev : 第一次代表数组的第一项，以后都代表上一次回调函数的返回值；
-        console.log(prev,next);//第一次输出：112 3，第二次输出：115 45，第三次输出：160 6，第四次输出：166 78
-        return prev +next;
-    });
-    console.log(a);//244
+let  a = arr.reduce((prev,next)=>{
+  // prev : 第一次代表数组的第一项，以后都代表上一次回调函数的返回值；
+  console.log(prev,next);//第一次输出：112 3，第二次输出：115 45，第三次输出：160 6，第四次输出：166 78
+  return prev +next;
+});
+console.log(a);//244
 ```
 + reduce回调函数后面可以传一个参数
 ``` js
 let arr = [12,3,45,6,78];
-	let  a = arr.reduce((prev,next)=>{
-        console.log(prev,next);//第一次输出：100 12，第二次输出：100 3，第三次输出：100 45，第四次输出：100 6，第五次输出：100 78
-        return 100;
-    },100);
-    console.log(a);//100
+let  a = arr.reduce((prev,next)=>{
+  console.log(prev,next);//第一次输出：100 12，第二次输出：100 3，第三次输出：100 45，第四次输出：100 6，第五次输出：100 78
+  return 100;
+},100);
+console.log(a);//100
 ```
 ### 8) Array.some()
 + 返回一个布尔值；只要有一个符合条件就返回true；找到true，就不再向右进行查找；
 + some() 方法刚好同 every() 方法相反，some 测试数组元素时，只要有一个函数返回值为 true，则该方法返回 true，若全部返回 false，则该方法返回 false
 ``` js
 let arr = [12,3,45,6,78];
-	let a  = arr.some((item,index)=>{
-        console.log(100);
-        return item>10;
-    })
+let a  = arr.some((item,index)=>{
+  console.log(100);
+  return item>10;
+})
     console.log(a);//true
 ```
 
