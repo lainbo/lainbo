@@ -10,6 +10,7 @@ description: 日常看见一些有特色的库会收集下来，持续收集中
 ### 交互类
 + [vue拖拽](https://jbaysolutions.github.io/vue-grid-layout/) —— [GitHub](https://github.com/jbaysolutions/vue-grid-layout)
 + [vue2多行展开折叠](https://vue-clamp.vercel.app/?lang=zh) —— [GitHub](https://github.com/Justineo/vue-clamp)
++ [vue2切换动画](https://codesandbox.io/s/practical-sid-0ubim) —— [GitHub](https://github.com/tnfe/transx)
 + [vue3无限滚动列表](https://tnfe.github.io/vue3-infinite-list) —— [GitHub](https://github.com/tnfe/vue3-infinite-list)
 
 ### UI类
