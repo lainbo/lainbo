@@ -25,5 +25,6 @@ description: 日常看见一些有特色的库会收集下来，持续收集中
 + [Vue Infinite Slide Bar](https://biigpongsatorn.github.io/#/vue-infinite-slide-bar) Vue内容滚动 —— [GitHub](https://github.com/biigpongsatorn/vue-infinite-slide-bar)
 + [vue-typer](https://cngu.github.io/vue-typer/) Vue打字效果 —— [GitHub](https://github.com/cngu/vue-typer)
 + [vue-picture-cropper](https://chengpeiquan.github.io/vue-picture-cropper-demo/#/composition) Vue图片裁切工具 —— [GitHub](https://github.com/chengpeiquan/vue-picture-cropper)
++ pinyin-pro 中文转拼音、排序 —— [GitHub](https://github.com/zh-lx/pinyin-pro)
 
 **持续收集中……**
