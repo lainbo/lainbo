@@ -1,5 +1,5 @@
 <h1>
-<img src="https://readme-typing-svg.herokuapp.com?font=Welcome+to+my+GitHub&size=28&pause=1000&color=5B61FF&vCenter=true&repeat=false&width=450&height=50&lines=Hi+there%F0%9F%91%8B%2C+I'm+Jason+Liang.;Welecome+to+my+GitHub." alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Welcome+to+my+GitHub&size=28&pause=1000&color=5B61FF&vCenter=true&repeat=false&width=500&height=50&lines=Hi+there%F0%9F%91%8B%2C+I'm+Jason+Liang.;Welecome+to+my+GitHub." alt="Typing SVG" />
 </h1>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=lainbo" alt="lainbo" /></a> </p>
