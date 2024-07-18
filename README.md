@@ -4,7 +4,3 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.screw-hand.vercel.app/?username=lainbo&column=-1&margin-w=25&margin-h=15&rank=-UNKNOWN,-C" alt="lainbo" /></a> </p>
 
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=lainbo&show_icons=true&locale=en&layout=compact" alt="lainbo" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=lainbo&show_icons=true&locale=en" alt="lainbo" /></p>
