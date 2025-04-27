@@ -1,1 +1,1 @@
-<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=28&pause=1000&color=646CFF&vCenter=true&repeat=false&random=false&width=500&lines=Hi+there%F0%9F%91%8B%2C+I'm+Lainbo.;Welcome+to+my+GitHub." alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=500&size=28&pause=1000&color=646CFF&vCenter=true&repeat=false&random=false&width=500&lines=Hi+there%F0%9F%91%8B%2C.;Welcome+to+my+GitHub." alt="Typing SVG" />
